@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: auto;
+    max-width: 1200px;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.headerBuffer {
+    height: 80px;
+}
+
+.footer {
+    position: fixed;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    bottom: 0px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background-color: rgb(140, 140, 218);
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.box img {
+    width: 100%;
+}
+
+.largeBox {
+    flex: 2 !important;
+    background-color: white;
+}
+
+.titreSecondaire {
+    color: lightgray;
+}
+
+.o1 {
+    order: 1;
+}
+
+.o2 {
+    order: 2;
+}
+
+.o3 {
+    order: 3;
+}
+
+
+@media screen and (min-width: 800px) {
+    .boxContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        flex: 1;
+        padding: 10px;
+    }
+}
